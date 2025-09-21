@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>진기현 관련 의혹·반박 종합</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+        :root {
+            --ink: #222;
+            --muted: #666;
+            --line: #ddd;
+            --bg: #fcfcfc;
+            --accent: #1f4b99;
+        }
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            background: var(--bg);
+            color: var(--ink);
+            font-family: "Noto Serif KR", serif;
+            line-height: 1.8
+        }
+
+        .wrap {
+            max-width: 980px;
+            margin: 40px auto;
+            padding: 0 20px
+        }
+
+        header {
+            margin-bottom: 28px
+        }
+
+        header .kicker {
+            font-size: 12px;
+            letter-spacing: .12em;
+            color: var(--muted);
+            text-transform: uppercase
+        }
+
+        header h1 {
+            font-size: 28px;
+            margin: 6px 0 4px
+        }
+
+        header .meta {
+            font-size: 13px;
+            color: var(--muted)
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 28px
+        }
+
+        @media (min-width: 980px) {
+            .grid {
+                grid-template-columns: minmax(0, 1.25fr) minmax(0, .75fr)
+            }
+        }
+
+        .article {
+            background: #fff;
+            border: 1px solid var(--line);
+            padding: 22px 22px 8px;
+            border-radius: 10px;
+        }
+
+        .article h2 {
+            font-size: 24px;
+            margin: 0 0 6px
+        }
+
+        .article h3 {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--muted);
+            margin: 0 0 12px
+        }
+
+        .meta-bar {
+            font-size: 12px;
+            color: var(--muted);
+            margin-bottom: 16px
+        }
+
+        p {
+            text-align: justify;
+            margin: 12px 0
+        }
+
+        blockquote {
+            margin: 18px 0;
+            padding: 12px 16px;
+            border-left: 3px solid var(--accent);
+            background: #f5f7fb;
+            color: #1a1d29;
+            font-style: italic;
+            border-radius: 4px
+        }
+
+        .divider {
+            height: 1px;
+            background: var(--line);
+            margin: 22px 0
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 3px 8px;
+            border: 1px solid var(--line);
+            border-radius: 999px;
+            font-size: 11px;
+            color: var(--muted);
+            margin-right: 6px
+        }
+
+        .factbox,
+        .timeline,
+        .comments {
+            background: #fff;
+            border: 1px solid var(--line);
+            padding: 16px;
+            border-radius: 10px
+        }
+
+        .factbox h4,
+        .timeline h4,
+        .comments h4 {
+            margin: 0 0 10px;
+            font-size: 16px
+        }
+
+        .factbox ul,
+        .timeline ul {
+            margin: 10px 0 0 18px
+        }
+
+        .factbox li,
+        .timeline li {
+            margin: 6px 0
+        }
+
+        .tag {
+            background: #eef2ff;
+            border: 1px solid #d7defc;
+            color: #314499;
+            padding: 2px 6px;
+            border-radius: 6px;
+            font-size: 11px;
+            margin-left: 6px
+        }
+
+        .related {
+            display: flex;
+            flex-direction: column;
+            gap: 14px
+        }
+
+        .rel {
+            border: 1px dashed var(--line);
+            border-radius: 8px;
+            padding: 10px 12px;
+            background: #fff
+        }
+
+        .rel a {
+            color: var(--accent);
+            text-decoration: none
+        }
+
+        .rel small {
+            display: block;
+            color: var(--muted)
+        }
+
+        /* 댓글 스타일 */
+        .comment {
+            border-top: 1px solid #eee;
+            padding: 10px 0
+        }
+
+        .c-head {
+            font-size: 13px;
+            color: var(--muted)
+        }
+
+        .c-user {
+            font-weight: 700;
+            color: #333;
+            margin-right: 8px
+        }
+
+        .c-time {
+            font-size: 12px;
+            color: #999
+        }
+
+        .c-text {
+            margin: 6px 0 4px
+        }
+
+        .c-actions {
+            font-size: 12px;
+            color: #666
+        }
+
+        .c-actions span {
+            margin-right: 12px
+        }
+
+        .pill {
+            display: inline-block;
+            background: #f2f2f2;
+            color: #555;
+            border-radius: 999px;
+            padding: 3px 8px;
+            font-size: 11px;
+            margin-right: 6px
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <div class="kicker">SPECIAL COVERAGE</div>
+            <h1>진기현(세계적 투자사 CEO) 의혹 보도 & 후속 반박 기사</h1>
+            <div class="meta">엮임: 2025-10-28 ~ 2025-11-02 | 맥락 요약·타임라인·댓글 포함</div>
+        </header>
+
+        <div class="grid">
+            <!-- 좌측: 기사 1 + 기사 2 -->
+            <main class="maincol">
+                <!-- 기사 1: 사용자가 쓴 폭로 기사 -->
+                <article class="article" id="art-1">
+                    <span class="badge">의혹 보도</span><span class="tag">2025-10-28</span>
+                    <h2>각계 리더들을 통제하는 비밀 조직의 수장</h2>
+                    <h3>“후원자 가면 뒤, 약점 기반의 권력 지배 구조” — 익명 제보 다수</h3>
+                    <div class="meta-bar">○○일보 탐사보도팀 | 기자: (사용자) | 발행일: 2025년 10월 28일</div>
+
+                    <p>서울 — 세계적 투자사 CEO <strong>진기현(34)</strong>이 장학금·투자·멘토십으로 포장된 ‘후원’ 네트워크를 통해 정·재계, 학계, 예술계의 차세대 리더들을
+                        실질적으로 통제해왔다는 의혹이 제기됐다. 본지는 복수의 익명 제보와 내부 문건 사본을 확보, 이른바 <em>“검은 실(Black Threads)”</em>로 불리는 비공개
+                        관리 체계가 운영됐다는 주장을 확인했다.</p>
+
+                    <p>제보에 따르면 핵심은 두 갈래다. 첫째, ‘<strong>아이기스 펠로십(Aegis Fellowship)</strong>’ 등 비영리 재단을 통한 인재 선발·후원. 둘째,
+                        선발 단계부터 <strong>NDA(비밀유지)</strong>·재정자문·위기관리라는 명목으로 개인 신상·재정·사생활 데이터를 입수한 뒤, 특정 ‘<em>리스크
+                            노트</em>’에 저장해 필요 시 영향력을 행사한다는 구조다.</p>
+
+                    <blockquote>
+                        “그는 단순한 후원자가 아닙니다. 회담, 전시, 포럼 뒤편에서 차세대 리더들의 ‘실’을 쥐고 있습니다. 결정적 순간에만 당깁니다.” — 익명 제보자 A
+                    </blockquote>
+
+                    <p>또한 내부자 B는 “펠로십 수료자 일부가 재단 계열 투자사에 자동 편입되며, 이후 ‘선의의 조언’ 형태의 의사결정 개입이 이뤄졌다”고 주장했다. 본지가 확보한 문건 사본에는
+                        <em>“행동지침(Behavioral Brief)”</em>이라는 제목과 함께 수혜자별 ‘대외 발언 가이드’가 첨부됐으며, 몇몇은 정책 제언문 초안과 유사한 편집 이력이
+                        확인됐다.</p>
+
+                    <p>한편, 본지는 “리스크 노트”로 지칭되는 내부 표기에서 <em>조세·학력·사생활</em> 등 민감 항목이 구분돼 있다는 서술을 확인했다. 다만 현재 공개 가능한 수준의 자료는
+                        모자이크 처리된 스크린샷과 녹취 일부뿐이며, 진기현 개인의 지시 정황을 명시한 문건은 독자 공개가 어려운 상태다.</p>
+
+                    <blockquote>
+                        “그는 개인적 약점을 도덕의 언어로 포장합니다. ‘도와주겠다’는 말 뒤에는, 언제든 되돌릴 수 있는 계산이 숨어 있죠.” — 익명 제보자 C(예술계)
+                    </blockquote>
+
+                    <p>본지는 진기현 측에 수차례 서면 질의를 보냈으나, 마감 시점까지 공식 답변을 받지 못했다.</p>
+
+                    <div class="divider"></div>
+                    <div class="factbox">
+                        <h4>기사 1 요점</h4>
+                        <ul>
+                            <li>비영리 재단·펠로십→후원·멘토링→데이터 수집→‘리스크 노트’ 관리 체계 의혹</li>
+                            <li>수혜자 의사결정에 ‘선의의 조언’ 명목 개입 정황 제보</li>
+                            <li>증거 공개 제약(모자이크 캡처·부분 녹취)으로 결정적 문서 공개 불가</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- 기사 2: 반박·팩트체크 -->
+                <article class="article" id="art-2">
+                    <span class="badge">반박·팩트체크</span><span class="tag">2025-10-30 ~ 11-02</span>
+                    <h2>“증거 불충분·제보 신뢰도 결여”… ‘비밀 조직’ 보도 잇단 반박</h2>
+                    <h3>녹취 편집 논란·스크린샷 메타데이터 불일치·제보자 전력 문제 제기</h3>
+                    <div class="meta-bar">○○일보 팩트체크팀 / △△경제 / □□주간 등 다수 | 취합: 2025년 10월 30일~11월 2일</div>
+
+                    <p>서울 — 앞서 제기된 진기현 관련 ‘비밀 조직’ 의혹 보도에 대해, 복수의 언론과 전문가들이 <strong>증거 불충분</strong>과 <strong>제보 신뢰도
+                            결여</strong>를 이유로 반박에 나섰다. 핵심 쟁점은 ① 녹취 파일 편집 여부, ② 내부 문건 스크린샷의 메타데이터 불일치, ③ 제보자 A의 과거 금전 분쟁
+                        전력 등이다.</p>
+
+                    <blockquote>
+                        “충분한 물증 없는 상태에서 특정인을 ‘조직 수장’으로 단정하는 것은 언론 윤리에 어긋납니다.” — ○○대학교 법학과 이 교수
+                    </blockquote>
+
+                    <p><strong>녹취 편집 논란</strong>과 관련해, 타 매체의 포렌식 분석 결과 ‘침묵 구간’ 사이에 미세한 웨이브 변형 흔적이 포착됐다. 해당 분석 보고서는 “맥락상
+                        조건절이 삭제됐을 가능성”을 제기하며, ‘도와주겠다’는 표현 앞뒤의 문장이 통째로 누락된 정황을 지적했다.</p>
+
+                    <p><strong>스크린샷 메타데이터 불일치</strong> 문제도 제기됐다. 팩트체크팀은 제시된 내부 문건 캡처가 서로 다른 기기·OS에서 동일한 타임스탬프로 저장된 점, 특정
+                        폰트 렌더링의 미묘한 차이 등을 근거로 “<em>합성 가능성</em>을 배제할 수 없다”고 결론냈다.</p>
+
+                    <p><strong>제보자 신뢰도</strong>에 대해서는, 익명 제보자 A가 과거 재정 분쟁으로 고소·취하를 반복한 전력이 확인됐다. 또한 펠로십 선발에서 탈락한 뒤 재단
+                        관계자와의 갈등이 있었던 사실이 드러나 공정성 논란이 일었다.</p>
+
+                    <blockquote>
+                        “실체 없는 ‘비밀 조직’을 내세워 대중의 불안을 자극하는 건 음모론의 전형입니다. 지금 공개된 재료로는 의혹을 구조화할 수 없습니다.” — ○○대학교 사회학과 김 교수
+                    </blockquote>
+
+                    <p>다만 일부 전문가들은 “<em>후원과 영향력</em>의 경계가 모호한 영역임은 부인하기 어렵다”며, “제도적 투명성을 높이는 별도의 논의는 필요하다”고 덧붙였다. 현재까지
+                        진기현 본인은 공식 입장을 밝히지 않았다.</p>
+
+                    <div class="divider"></div>
+                    <div class="factbox">
+                        <h4>반박 기사 요점(팩트체크 결론)</h4>
+                        <ul>
+                            <li>녹취: 편집/삭제 의심 구간 확인 → 맥락 왜곡 가능성</li>
+                            <li>문건 캡처: 메타데이터·폰트 렌더링 불일치 → 합성·혼입 가능성</li>
+                            <li>제보자: 과거 분쟁 전력·탈락 경력 → 이해관계 충돌 소지</li>
+                            <li>총평: “의혹은 가능 영역이나, 현 단계 증거로 단정 불가”</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- 기사 댓글(요약) -->
+                <section class="comments">
+                    <h4>기사 댓글 (요약)</h4>
+                    <div class="comment">
+                        <div class="c-head"><span class="c-user">skeptic</span> <span class="c-time">2025.10.30
+                                08:41</span></div>
+                        <div class="c-text">결정적 증거도 없이 사람 하나 매장하려는 기사. 심각하네요.</div>
+                        <div class="c-actions"><span>👍 42</span><span>👎 3</span><span class="pill">베스트</span></div>
+                    </div>
+                    <div class="comment">
+                        <div class="c-head"><span class="c-user">observer</span> <span class="c-time">2025.10.30
+                                11:02</span></div>
+                        <div class="c-text">펠로십 같은 후원으로 의존도 생기는 건 사실. 다만 ‘조직 수장’이라 단정하긴 이르지.</div>
+                        <div class="c-actions"><span>👍 18</span><span>👎 9</span></div>
+                    </div>
+                    <div class="comment">
+                        <div class="c-head"><span class="c-user">hiddeneye</span> <span class="c-time">2025.10.31
+                                09:17</span></div>
+                        <div class="c-text">국제 포럼 뒷풀이에서 ‘리스크 노트’ 비슷한 단어 듣긴 했음. 그냥 망상만은 아닐 수도.</div>
+                        <div class="c-actions"><span>👍 5</span><span>👎 29</span></div>
+                    </div>
+                    <div class="comment">
+                        <div class="c-head"><span class="c-user">lawstudent</span> <span class="c-time">2025.11.01
+                                00:05</span></div>
+                        <div class="c-text">언론윤리 위반 소지가 커 보입니다. 팩트체크 기사 보니 증거가 취약해요.</div>
+                        <div class="c-actions"><span>👍 27</span><span>👎 2</span></div>
+                    </div>
+                </section>
+            </main>
+
+            <!-- 우측: 타임라인·관련·요약 -->
+            <aside class="sidecol">
+                <div style="height:18px"></div>
+                <section class="factbox">
+                    <h4>기사 요약</h4>
+                    <ul>
+                        <li>진기현 CEO, 펠로십·재단 후원을 통해 차세대 리더들을 지원</li>
+                        <li>그러나 익명 제보자들은 “후원 뒤 약점 관리·조종” 의혹 제기</li>
+                        <li>일부 문건 캡처·녹취록 공개됐으나, 결정적 증거는 부족</li>
+                        <li>진기현 측은 답변을 내놓지 않은 상태</li>
+                    </ul>
+                </section>
+
+
+                <div style="height:18px"></div>
+                <section class="related">
+                    <div class="rel">
+                        <small>관련 보기</small>
+                        <a href="#art-1">의혹 보도 원문으로 이동</a>
+                    </div>
+                    <div class="rel">
+                        <small>관련 보기</small>
+                        <a href="#art-2">반박·팩트체크로 이동</a>
+                    </div>
+
+                </section>
+            </aside>
+        </div>
+    </div>
+</body>
+
+</html>
